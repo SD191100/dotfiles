@@ -1,0 +1,77 @@
+## server
+Host prox
+        Hostname 192.168.1.8
+        user root
+        IdentityFile ~/.ssh/id_home-lab-keys
+
+## raspberry pi's
+Host rpi
+        Hostname 192.168.1.3
+        user tanjiro
+        IdentityFile ~/.ssh/id_home-lab-keys
+
+Host pihole
+        Hostname 192.168.1.50
+        user pi
+        IdentityFile ~/.ssh/id_home-lab-keys
+
+## nas/samba
+Host share
+        Hostname 192.168.1.100
+        user tanjiro
+        IdentityFile ~/.ssh/id_home-lab-keys
+
+## orchestration
+Host portainer
+        Hostname 192.168.1.102
+        user tanjiro
+        IdentityFile ~/.ssh/id_home-lab-keys
+
+Host kube
+        Hostname 192.168.1.80
+        user tanjiro
+        IdentityFile ~/.ssh/id_home-lab-keys
+Host kworkerone
+        Hostname 192.168.1.81
+        user tanjiro
+        IdentityFile ~/.ssh/id_home-lab-keys
+
+
+
+## Databases
+Host mssql
+        Hostname 192.168.1.101
+        user root
+        IdentityFile ~/.ssh/id_home-lab-keys
+
+Host postgres
+        Hostname 192.168.1.106
+        user tanjiro
+        IdentityFile ~/.ssh/id_home-lab-keys
+
+## Monitoring
+Host prometheus
+        Hostname 192.168.1.103
+        user tanjiro
+        IdentityFile ~/.ssh/id_home-lab-keys
+## virtual machines
+Host kali
+        Hostname 192.168.1.104
+        user kali
+        IdentityFile ~/.ssh/id_home-lab-keys
+Host lama
+        Hostname 192.168.1.107
+        user tanjiro
+        IdentityFile ~/.ssh/id_home-lab-keys
+
+# Host gitlab
+#       Hostname 192.168.1.22
+#       user tanjiro
+#       IdentityFile ~/.ssh/id_home-lab-keys
+#
+# Host gitlab-cont
+# 	    Hostname 192.168.1.22
+# 	    Port 222
+# 	    User git
+# 	    IdentityFile ~/.ssh/id_home-lab-keys
+
